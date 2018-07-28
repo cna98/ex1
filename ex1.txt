@@ -1,0 +1,31 @@
+
+//عدد میگیرد بررسی میکند اول است یا خیر
+
+package ex1;
+import java.util.Scanner;
+public class Ex {
+	
+		
+		public static void main(String[]args) {
+		System.out.print("Enter a number:\t");	
+		Scanner input = new Scanner(System.in);
+		int number = input.nextInt();
+		boolean result = true;
+		for(int i = 2 ; i<number ; i++)
+		{
+			if((number % i)== 0)
+			{
+				result = false;
+				break;
+			}
+			
+		}
+		if(result == false)
+			System.out.printf("%d is not prime!",number);
+		else 
+			System.out.printf("%d is prime!", number);
+		}
+	}
+
+
+
